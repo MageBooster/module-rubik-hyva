@@ -1,3 +1,27 @@
+<!-- mb-top -->
+# MageBooster Rubikpara for MageBooster Checkout
+
+Rubikpara payment panel for MageBooster Checkout on Hyvä (and Luma) themes: method notes and TRY amount; payment on the hosted page.
+
+![Magento 2.4.4–2.4.9](https://img.shields.io/badge/Magento-2.4.4%E2%80%932.4.9-orange) ![PHP 8.0+](https://img.shields.io/badge/PHP-8.0%2B-777bb4) ![Luma | Hyvä](https://img.shields.io/badge/themes-Luma%20%7C%20Hyv%C3%A4-0a7) ![Licence: Commercial](https://img.shields.io/badge/licence-Commercial-red)
+
+```bash
+composer require magebooster/module-rubik-hyva
+bin/magento setup:upgrade
+```
+
+Paid packages are served from the MageBooster Composer repository (`https://repo.magebooster.com`); your serial number is the password. See the guide for the full steps.
+
+- Guide: [English](docs/HOWTO.en.md) · [Türkçe](docs/HOWTO.tr.md)
+- Changes: [CHANGELOG.md](CHANGELOG.md)
+- Buy a licence: https://magebooster.com
+- Support: info@magebooster.com
+
+The guides in `docs/` are those of the base module (`magebooster/module-rubik`); this package adds its panel to MageBooster Checkout.
+
+---
+
+<!-- /mb-top -->
 # MageBooster_RubikHyva – Rubikpara in MageBooster Checkout (Hyvä and Luma)
 
 Commercial licence (see `LICENSE.txt`). Adds the Rubikpara method panel to the **MageBooster Checkout** (Alpine.js one-page checkout), which runs on

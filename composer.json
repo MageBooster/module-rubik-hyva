@@ -2,7 +2,28 @@
     "name": "magebooster/module-rubik-hyva",
     "description": "Rubikpara payment panel for MageBooster Checkout on Hyvä (and Luma) themes: method notes and TRY amount; payment on the hosted page.",
     "type": "magento2-module",
+    "keywords": [
+        "magento2",
+        "magento-2-module",
+        "hyva",
+        "luma",
+        "payment",
+        "rubikpara",
+        "checkout",
+        "alpinejs"
+    ],
+    "homepage": "https://magebooster.com",
     "license": "proprietary",
+    "authors": [
+        {
+            "name": "WebWorks 101 OÜ",
+            "homepage": "https://magebooster.com"
+        }
+    ],
+    "support": {
+        "email": "info@magebooster.com",
+        "docs": "https://github.com/MageBooster/module-rubik-hyva/blob/main/docs/HOWTO.en.md"
+    },
     "require": {
         "php": ">=8.0",
         "ext-json": "*",
