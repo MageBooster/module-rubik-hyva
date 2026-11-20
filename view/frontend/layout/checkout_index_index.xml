@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+    Only used by MageBooster Checkout (blocks go into its containers; without it nothing is rendered).
+    The Luma checkout keeps using the Knockout renderer of MageBooster_Rubik.
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="mb.checkout.payment.panels">
+            <block name="mb.checkout.rubik.panel" template="MageBooster_RubikHyva::panel.phtml" ifconfig="payment/magebooster_rubik/active">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">MageBooster\RubikHyva\ViewModel\Panel</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

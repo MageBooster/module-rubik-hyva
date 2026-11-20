@@ -1,0 +1,36 @@
+MageBooster commercial licence (end-user licence agreement)
+
+Copyright (c) 2026 WebWorks 101 OÜ, Tallinn, Estonia ("Licensor"), trading as MageBooster.
+All rights reserved.
+
+1. Licence
+   This software is licensed, not sold. Each licence is tied to one serial number. One serial number
+   covers one production installation (one store domain). Staging and development copies of that same
+   store are allowed. The Luma and Hyvä editions of a module are separate products with separate
+   serial numbers.
+
+2. Customer
+   Each serial number and each download is tied to the customer who bought it.
+
+3. What you may do
+   You may install the software on the store your serial number covers and modify the code for that
+   store. Keep the copyright and licence notices in every file.
+
+4. What you may not do
+   - copy or install the software on other stores
+   - redistribute, resell or sublicense it, in source or compiled form
+   - publish it in public repositories, marketplaces or forums
+   - remove or bypass licence checks, or remove these notices
+   - share serial numbers
+
+5. Unauthorised copying or use
+   In case of unauthorised copying or use, the serial number is revoked without refund, updates and
+   support stop, and WebWorks 101 OÜ may claim damages and take legal action.
+
+6. No warranty
+   The software is provided "as is", without warranty of any kind. To the extent the law allows,
+   WebWorks 101 OÜ is not liable for any damage arising from its use.
+
+7. Governing law
+   This licence is governed by Estonian law. Disputes go to Harju County Court (Harju Maakohus),
+   Estonia.

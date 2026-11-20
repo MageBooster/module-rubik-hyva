@@ -1,0 +1,32 @@
+<?php
+/**
+ * Panel under the Rubikpara method in MageBooster Checkout. Rendered inside its x-data root, so Alpine sees the
+ * checkout scope (pay, totals).
+ *
+ * @var \Magento\Framework\View\Element\Template $block
+ * @var \Magento\Framework\Escaper $escaper
+ * @var \MageBooster\RubikHyva\ViewModel\Panel $vm
+ */
+$vm = $block->getData('view_model');
+if (!$vm->isAvailable()) {
+    return;
+}
+$code = $vm::CODE;
+$rate = $vm->tryRate();
+?>
+<div class="mb-co-pp" x-show="pay === '<?= $escaper->escapeJs($code) ?>'" x-cloak>
+    <?php if ($vm->description() !== ''): ?>
+    <p><?= $escaper->escapeHtml($vm->description()) ?></p>
+    <?php endif; ?>
+    <?php if ($vm->isTestMode()): ?>
+    <p class="mb-co-pp-warn"><?= $escaper->escapeHtml(__('Test mode: no real payment is taken.')) ?></p>
+    <?php endif; ?>
+    <?php if ($rate !== null): ?>
+    <p x-show="totals">
+        <?= $escaper->escapeHtml(__('You will be charged in Turkish lira:')) ?>
+        <strong x-text="totals ? (parseFloat(totals.base_grand_total) * <?= /* @noEscape */ json_encode($rate) ?>).toFixed(2) + ' TRY' : ''"></strong>
+        <small>(1 <?= $escaper->escapeHtml($vm->baseCurrency()) ?> = <?= $escaper->escapeHtml(number_format($rate, 4, '.', '')) ?> TRY)</small>
+    </p>
+    <?php endif; ?>
+    <small><?= $escaper->escapeHtml(__('After "Place order" you are taken to the Rubikpara payment page to pay.')) ?></small>
+</div>
